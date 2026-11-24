@@ -10,7 +10,7 @@
 *,*::before,*::after{box-sizing:inherit}
 html,body{height:100%;margin:0}
 body{font-family:'Quicksand',system-ui,sans-serif;color:#3a2a20;overflow-x:hidden;
-background:var(--cream) url('image/background.jpg') center/cover fixed no-repeat}
+background:var(--cream) url('background.jpg') center/cover fixed no-repeat}
 .stage{min-height:100%;display:flex;align-items:center;justify-content:center;padding:16px;position:relative}
 .card{position:relative;z-index:1;width:min(780px,100%);background:#fff;border-radius:48px;padding:28px 28px 90px;
 box-shadow:10px 10px 0 var(--yellow),14px 14px 0 rgba(200,50,30,.35)}
@@ -90,16 +90,16 @@ display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:
 </div></div>
 <script>
 const WORDS=[
-{w:'kaki',s:['ka','ki'],e:'image/kaki-removebg-preview.png',d:['ke','kan']},
-{w:'buku',s:['bu','ku'],e:'image/buku-removebg-preview.png',d:['bun','la']},
-{w:'baju',s:['ba','ju'],e:'image/baju-removebg-preview.png',d:['bi','ji']},
-{w:'mata',s:['ma','ta'],e:'image/mata-removebg-preview.png',d:['bi','la']},
-{w:'kasut',s:['ka','sut'],e:'image/kasut-removebg-preview.png',d:['su','tuk']},
-{w:'batu',s:['ba','tu'],e:'image/batu-removebg-preview.png',d:['ta','bu']},
-{w:'bola',s:['bo','la'],e:'image/bola-removebg-preview.png',d:['lo','bal']},
-{w:'sabun',s:['sa','bun'],e:'image/sabun-removebg-preview.png',d:['su','bu']},
-{w:'pisang',s:['pi','sang'],e:'image/pisang-removebg-preview.png',d:['pa','sa']},
-{w:'roti',s:['ro','ti'],e:'image/roti-removebg-preview.png',d:['ta','se']}];
+{w:'kaki',s:['ka','ki'],e:'kaki-removebg-preview.png',d:['ke','kan']},
+{w:'buku',s:['bu','ku'],e:'buku-removebg-preview.png',d:['bun','la']},
+{w:'baju',s:['ba','ju'],e:'baju-removebg-preview.png',d:['bi','ji']},
+{w:'mata',s:['ma','ta'],e:'mata-removebg-preview.png',d:['bi','la']},
+{w:'kasut',s:['ka','sut'],e:'kasut-removebg-preview.png',d:['su','tuk']},
+{w:'batu',s:['ba','tu'],e:'batu-removebg-preview.png',d:['ta','bu']},
+{w:'bola',s:['bo','la'],e:'bola-removebg-preview.png',d:['lo','bal']},
+{w:'sabun',s:['sa','bun'],e:'sabun-removebg-preview.png',d:['su','bu']},
+{w:'pisang',s:['pi','sang'],e:'pisang-removebg-preview.png',d:['pa','sa']},
+{w:'roti',s:['ro','ti'],e:'roti-removebg-preview.png',d:['ta','se']}];
 const $=id=>document.getElementById(id);
 let order,idx,score,slots,tiles,tries,done;
 const show=id=>['home','game','end'].forEach(x=>$(x).classList.toggle('hide',x!==id));
